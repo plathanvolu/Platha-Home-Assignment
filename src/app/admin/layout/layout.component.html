@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">MY APP</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a [routerLink]="['/reports']" class="nav-link align-middle px-0">
+                            <span class="ms-1 d-none d-sm-inline">Reports</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a [routerLink]="['/reports2']" class="nav-link align-middle px-0">
+                            <span class="ms-1 d-none d-sm-inline">Reports 2</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a [routerLink]="['/reports3']" class="nav-link align-middle px-0">
+                            <span class="ms-1 d-none d-sm-inline">Reports 3</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <hr>
+                <div class="dropdown pb-4">
+                    <dl class="nav-item">
+                        <a [routerLink]="['/settings']" class="nav-link align-middle px-0">
+                            <span class="ms-1 d-none d-sm-inline">Settings</span>
+                        </a>
+                    </dl>
+                    <dl class="nav-item">
+                        <a [routerLink]="['/login']" class="nav-link align-middle px-0">
+                            <span class="ms-1 d-none d-sm-inline">LogOut</span>
+                        </a>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col px-3">
+            <app-reports></app-reports>
+            <app-reports2></app-reports2>
+        </div>
+
+    </div>
+</div>

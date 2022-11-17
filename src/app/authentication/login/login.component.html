@@ -1,0 +1,29 @@
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center h-100">
+        <div class="col-4 bg-light text-dark" style="border-radius: 1rem;">
+            <div class="card-body p-5">
+                <div class="text">
+                    <h2 class="text-center text-danger"> Login </h2>
+                </div>
+                <br>
+                <form>
+                    <div class="mb-3 text-primary">
+                        <label for="userName" class="form-label">User Name</label>
+                        <input type="text" name="userName" id="userName" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">User Name is Mandatory</small>
+                    </div>
+
+                    <div class="mb-3 text-primary">
+                        <label for="" class="form-label">Password</label>
+                        <input type="password" name="" id="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Password is Mandatory</small>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-primary" (click)="Login()">Login </button>
+
+                </form>
+            </div>
+        </div>
+    </div>

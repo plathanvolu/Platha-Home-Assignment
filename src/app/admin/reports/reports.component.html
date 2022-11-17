@@ -1,0 +1,32 @@
+<div class="container">
+    <div class=col-md-6>
+        Enter Search Key:
+        <input type="text" name="searchKey" [(ngModel)]="searchKey" (keyup)="pushSearchKey()">
+        <br>
+
+        <!-- <button type="button" class="btn btn-outline-info">Manager Filter</button> &nbsp; &nbsp;
+        <button type="button" class="btn btn-outline-info">Role Filter</button>&nbsp; &nbsp;
+        <button type="button" class="btn btn-outline-info">Apply</button>
+ -->
+        <br>
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Manager</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let a of table">
+                    <td>{{a.name}}</td>
+                    <td>{{a.email}}</td>
+                    <td>{{a.role}}</td>
+                    <td>{{a.manager}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
